@@ -1,0 +1,119 @@
+{
+	"variables": [],
+	"info": {
+		"name": "REST",
+		"_postman_id": "553ddeae-8c15-9d17-bc76-718c5eb4fdc7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "제품등록",
+			"request": {
+				"url": "http://localhost:3000/products",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "price",
+							"value": "1000",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "제품리스트",
+			"request": {
+				"url": "http://localhost:3000/products",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "개별리스트",
+			"request": {
+				"url": "http://localhost:3000/products/0",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "개별수정",
+			"request": {
+				"url": "http://localhost:3000/products/0",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "nice",
+							"type": "text",
+							"enabled": true
+						},
+						{
+							"key": "price",
+							"value": "3000",
+							"type": "text",
+							"enabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "개별삭제",
+			"request": {
+				"url": "http://localhost:3000/products/0",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

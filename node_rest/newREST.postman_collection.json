@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "5df1da55-2833-4a42-8330-9a86c0902859",
+		"name": "REST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "제품등록",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://52.194.248.145:19460/products",
+					"protocol": "http",
+					"host": [
+						"52",
+						"194",
+						"248",
+						"145"
+					],
+					"port": "19460",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "제품리스트",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://52.194.248.145:19460/products",
+					"protocol": "http",
+					"host": [
+						"52",
+						"194",
+						"248",
+						"145"
+					],
+					"port": "19460",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "개별리스트",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "개별수정",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "nice",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "3000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://52.194.248.145:19460/products/0",
+					"protocol": "http",
+					"host": [
+						"52",
+						"194",
+						"248",
+						"145"
+					],
+					"port": "19460",
+					"path": [
+						"products",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "개별삭제",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://52.194.248.145:19460/products/0",
+					"protocol": "http",
+					"host": [
+						"52",
+						"194",
+						"248",
+						"145"
+					],
+					"port": "19460",
+					"path": [
+						"products",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
